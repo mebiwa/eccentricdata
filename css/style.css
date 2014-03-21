@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+
+			font-size: 14px;
+			font-family: Roboto, Arial;
+			line-height: 1.5;
+
+			color: #444444;
+
+			width: 950px;
+			margin: 0 auto 0 auto;
+
+			background-color: white;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+}
+
+header {
+			text-align: center;
+}
+
+h1 {
+			/*font-size: 28px;*/
+			margin: 20px 0 20px 0;
+			color: #002060;
+}
+
+h1 img {
+	width: 60%;
+
+
+}
+
+
+section{
+	background: #002060;
+	/*#0070C0;*/
+	/*#F0F8FF;*/
+	padding: 5px 20px 10px 20px;
+	border: 1px solid #eeeeee;
+	color: white;
+}
+
+
+a{
+	color: #658099;
+}
+
+footer {
+	color: grey;
+	margin: 20px 0 40px 0;
+	font-size: 11px;
+	text-align: center;
+	line-height: 0.8;
+}
+
+/*best to do at the bottom as overwriting normal styles*/
+/*responsive media queries, see whatsteerdidproject for more information*/
+@media screen and (max-width: 720px) {
+	body {
+		width: auto;
+		margin: 0 20px 0 20px;
+
+	}
+
+	/*resize my images AND iframes if they are too big*/
+	/*use max width so not bigger than rest of content*/
+	img, iframe {
+		max-width: 100%;
+	}
+
+	iframe {
+		height; 200px
+	}
+
+	/*my quotes are too big, make them a bit smaller*/
+	blockquote {
+		font-size: 16px;
+	}
+
+	/*we want to switch the nav links to be blocks not inline text*/
+	nav a {
+		display: block;
+		padding: 10px;
+
+	}
+}
